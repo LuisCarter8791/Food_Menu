@@ -38,20 +38,6 @@ html {
     text-shadow: .3rem .3rem .3rem #000;
 }
 
-.section-1-icons i {
-    font-size: 35rem;
-    color: #a79a2d;
-    position: absolute;
-    margin: 0 auto;
-    /* transform: translate(0, 0) scale(3); */
-    text-shadow: .2rem .2rem .2rem #000;
-}
-
-.section-1-icons i.change {
-    margin: 0 auto;
-    transform: translate(0, 0);
-}
-
 /* END OF SECTION #1 */
 
 /* SECTION #2 */
@@ -71,13 +57,14 @@ html {
     justify-content: space-evenly;
 }
 
-.card :hover {
-    transform: rotateY(20deg) skewX(-2deg);
+.food-card:hover {
+    /* transform: rotateY(20deg) skewX(-2deg); */
+    transform: translateY(-120px) skewX(-2deg);
     box-shadow: 2rem 2rem 2rem #000;
 }
 
-.card {
-    width: 30rem;
+.food-card {
+    width: 450px;
     background-color: #a79a2d;
     padding: 4rem;
     display: flex;
@@ -86,14 +73,14 @@ html {
     align-items: center;
     box-shadow: 1rem 1rem 1rem #000;
     position: relative;
-    transform: rotateY(20deg) skewX(-2deg);
+    transform: rotateY(20deg);
 }
 
 .card-img {
     width: 100%;
 }
 
-.card::before {
+.food-card::before {
     content: '';
     height: 100%;
     width: 1rem;
@@ -106,7 +93,7 @@ html {
     box-shadow: -0.1rem -0.1rem -0.1rem #000;
 }
 
-.card::after {
+.food-card::after {
     content: '';
     height: 1rem;
     width: 100%;
@@ -145,10 +132,11 @@ html {
     box-shadow: -.2rem -.2rem .2rem #000;
     margin: auto;
 }
-
-
-
-
-
 /* END OF SECTION #2 */
+
+/* SECTION #3  */
+
+
+
+/* END OF SECTION #3  */
 
