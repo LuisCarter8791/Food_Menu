@@ -16,6 +16,81 @@ html {
 }
 /* END OF COMMON STYLES */
 
+/* NAVBAR */
+
+.navbarr {
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    position: fixed;
+    top: -20rem;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .2rem .2rem .2rem #000;
+    transition: .4s .2s;
+}
+
+.navbar.change {
+    top: 0;
+}
+
+.navbarr-link {
+    color: #aaa;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.navbarr-link:hover {
+    color: #fff;
+}
+
+.navbarr-link i {
+    font-size: 7rem;
+}
+
+.navbarr-link span {
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-top: 1rem;
+}
+
+.menu {
+    width: 4rem;
+    height: 6rem;
+    background-color: #000;
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+    border-radius: 30rem 30rem 15rem 15rem;
+    box-shadow: .1rem .1rem .1rem #000;
+    cursor: pointer;
+    transition: top .4s;
+}
+
+.menu .change {
+    top: 15rem;
+}
+
+.menu::before {
+    content: "";
+    width: .3rem;
+    height: 10rem;
+    background-color: #000;
+    position: absolute;
+    top: -8rem;
+    left: calc(422% - 15rem);
+    box-shadow: .1rem 0 .1rem #000;
+}
+
+/* END OF NAVBAR */
 
 /* SECTION #1 */
 .section-1 {
