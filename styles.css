@@ -20,20 +20,21 @@ html {
 
 .navbarr {
     width: 100%;
-    height: 15vh;
+    height: 11vh;
     background-color: #000;
     position: fixed;
-    top: -20rem;
+    top: -14rem;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: .2rem .2rem .2rem #000;
-    transition: .4s .2s;
+    transition: .4s;
 }
 
-.navbar.change {
+.navbarr.change {
     top: 0;
+    transition: top .4s .2s;
 }
 
 .navbarr-link {
@@ -72,21 +73,22 @@ html {
     border-radius: 30rem 30rem 15rem 15rem;
     box-shadow: .1rem .1rem .1rem #000;
     cursor: pointer;
-    transition: top .4s;
+    transition: top .4s .2s;
 }
 
-.menu .change {
+.menu.change {
     top: 15rem;
+    transition: top .4s
 }
 
 .menu::before {
     content: "";
     width: .3rem;
-    height: 10rem;
+    height: 15rem;
     background-color: #000;
     position: absolute;
-    top: -8rem;
-    left: calc(422% - 15rem);
+    top: -15rem;
+    left: calc(50% - .15rem);
     box-shadow: .1rem 0 .1rem #000;
 }
 
